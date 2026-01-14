@@ -16,7 +16,7 @@
  */
 
 // Configuration - CUSTOMIZE THESE VALUES
-const WHATSAPP_PHONE_NUMBER = '+918088653820'; // Replace with your WhatsApp number
+const INSTAGRAM_URL = 'https://www.instagram.com/nisa.rgaspices?igsh=ZjliNnR5YnJiMHdx';
 const PRODUCT_DATA = {
     honey: {
         name: 'Honey',
@@ -225,37 +225,10 @@ Please confirm availability and delivery details. Thank you!`;
     closeProductModal();
 }
 
-// WhatsApp Integration
+// Instagram Integration (replacing previous WhatsApp flow)
 function openWhatsApp(type, customMessage = '') {
-    let message = '';
-    
-    switch (type) {
-        case 'general':
-            message = 'Hi! I\'m interested in your Malenadu Savi products. Could you please share more details about availability and pricing?';
-            break;
-        case 'honey':
-            message = `Hi! I would like to order ${PRODUCT_DATA.honey.name}.
-
-Please confirm Price, availability and delivery details. Thank you!`;
-            break;
-        case 'pickle':
-            message = `Hi! I would like to order ${PRODUCT_DATA.pickle.name}.
-
-Please confirm Price, availability and delivery details. Thank you!`;
-            break;
-        case 'order':
-            message = customMessage;
-            break;
-        default:
-            message = 'Hi! I\'m interested in your products. Could you please share more details?';
-    }
-    
-    // Encode message for URL
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER.replace(/[^0-9]/g, '')}?text=${encodedMessage}`;
-    
-    // Open WhatsApp
-    window.open(whatsappUrl, '_blank');
+    // Ignore message type for now; open Instagram profile for DM/enquiry
+    window.open(INSTAGRAM_URL, '_blank');
 }
 
 // Smooth Scrolling for Navigation Links
