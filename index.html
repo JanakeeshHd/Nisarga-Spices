@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisarga Spices | Organic Honey, Masala Powders & Homemade Pickles</title>
+    <meta name="description" content="Nisarga Spices brings you pure forest honey, stone‑ground masala powders and homemade Amtekayi (hog plum) pickles from Karnataka. Small‑batch, clean ingredients, doorstep delivery.">
+    <meta name="keywords" content="Nisarga Spices, organic forest honey, stone ground masala, arrowroot powder, turmeric powder, nutmeg powder, black pepper powder, Amtekayi pickle, hog plum pickle, homemade pickles Karnataka">
+    <meta name="author" content="Nisarga Spices">
+    <meta property="og:title" content="Nisarga Spices">
+    <meta property="og:description" content="Organic honey and traditional spices with clean, modern design.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html#home" class="logo-link">
+                    <img src="img/logo.jpeg" alt="Nisarga Spices Logo" class="logo">
+                </a>
+                <h1>Nisarga Spices</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <img src="img/hero.png" 
+                 alt="Nisarga Spices hero" class="hero-bg-image" loading="eager">
+        </div>
+        <div class="hero-content">
+            <h2 class="hero-title">Pure Honey, Authentic Spices & Homemade Pickles</h2>
+            <p class="hero-subtitle">Handcrafted in Karnataka with clean ingredients and traditional recipes.</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary" onclick="openWhatsApp('general')">
+                    Enquire Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Nisarga Spices </h2>
+                    <p class="about-description">
+                        Nisarga Spices is a small‑batch brand from Karnataka focused on
+                        honest ingredients and time‑tested recipes. Every jar is crafted
+                        in limited quantities so you get consistent taste and freshness.
+                    </p>
+                    <p class="about-description">
+                        From forest‑harvested honey to slow‑roasted spice powders and
+                        tangy Amtekayi pickles, our products are free from artificial
+                        colours, flavours and preservatives – just real home‑style flavour.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <!-- Replace with your about/process image -->
+                    <img src="img/About.png" 
+                         alt="Traditional honey harvesting process" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Best‑Selling Nisarga Products</h2>
+            <div class="products-grid">
+                <!-- Product 1: Forest Honey -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/honey.jpeg" 
+                             alt="Nisarga organic forest honey bottle" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Organic Forest Honey</h3>
+                        <p class="product-description">
+                            Raw forest honey collected from the hills of Karnataka.
+                            Naturally thick, aromatic and packed with everyday wellness
+                            benefits – perfect for morning warm water, desserts or tea.
+                        </p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary" onclick="openWhatsApp('honey')">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Amtekayi Pickle -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/pickel.png" 
+                             alt="Nisarga Amtekayi hog plum pickle bottle" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Amtekayi (Hog Plum) Pickle</h3>
+                        <p class="product-description">
+                            Traditional Malenadu‑style hog plum pickle with a bold, tangy
+                            and spicy profile. Slow cured in cold‑pressed oil with freshly
+                            roasted spices – a perfect side for rice, roti or curd rice.
+                        </p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary" onclick="openWhatsApp('pickle')">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-view-more">
+                <a href="products.html" class="btn btn-outline">View more products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It's Made Section -->
+   <!-- <section class="process">
+        <div class="container">
+            <h2 class="section-title">How We Make Our Honey & Spices</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Sourcing</h3>
+                        <p>Raw ingredients are sourced from trusted growers and forest
+                            regions in and around Karnataka, with an emphasis on seasonal
+                            harvests and minimal middlemen.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Harvesting</h3>
+                        <p>Honey is carefully extracted and filtered without overheating,
+                            helping retain enzymes, flavour and natural goodness.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Preparation</h3>
+                        <p>Spices are cleaned, slow‑roasted and stone‑ground in small
+                            batches, ensuring consistent colour, aroma and taste.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Packaging</h3>
+                        <p>Each batch is packed in hygienic, food‑grade containers and
+                            labelled with clear usage suggestions and storage tips.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+     <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Order & Enquiry</h2>
+            <form class="contact-form" onsubmit="submitContactWhatsApp(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="email" required placeholder="you@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactPhone">Phone</label>
+                        <input type="tel" id="contactPhone" name="phone" placeholder="+91 ">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" name="subject" placeholder="Order / Inquiry">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="message" rows="5" required placeholder="Example: Need 2 kg honey + 3 packs turmeric. Share price & delivery."></textarea>
+                </div>
+                <div class="contact-actions">
+                    <button type="submit" class="btn btn-primary">Send via WhatsApp</button>
+                    <button type="button" class="btn btn-outline" onclick="submitContactEmail()">Send via Email</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo-link">
+                        <img src="img/logo.jpeg" alt="Nisarga Spices Logo" class="footer-logo">
+                    </a>
+                    <h3>Nisarga Spices</h3>
+                    <p>Organic honey, spices and homemade pickles</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <a href="products.html">Products</a>
+                        <a href="about.html">About Us</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <a href="#" onclick="openWhatsApp('general')">WhatsApp</a>
+                        <a href="mailto:info@nisargaspices.com">Email</a>
+                    </div>
+                </div>
+                    <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/nisa.rgaspices?igsh=ZjliNnR5YnJiMHdx" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nisarga Spices. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Selection Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Select Quantity</h3>
+                <button class="modal-close" onclick="closeProductModal()" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="product-info">
+                    <img id="modalImage" src="" alt="" class="modal-product-image">
+                    <div class="modal-product-details">
+                        <h4 id="modalProductName"></h4>
+                        <p id="modalProductPrice"></p>
+                    </div>
+                </div>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="10">
+                        <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                    </div>
+                </div>
+                <div class="total-price">
+                    <strong>Total: ₹<span id="totalPrice">0</span></strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeProductModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="confirmOrder()">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
