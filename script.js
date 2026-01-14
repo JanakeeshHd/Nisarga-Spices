@@ -16,7 +16,7 @@
  */
 
 // Configuration - CUSTOMIZE THESE VALUES
-const INSTAGRAM_URL = 'https://www.instagram.com/nisa.rgaspices?igsh=ZjliNnR5YnJiMHdx';
+const WHATSAPP_PHONE_NUMBER = '8971193507';
 const PRODUCT_DATA = {
     honey: {
         name: 'Honey',
@@ -211,7 +211,6 @@ function confirmOrder() {
     const product = PRODUCT_DATA[currentProduct];
     const total = product.price * quantity;
     
-    // Create WhatsApp message
     const message = `Hi! I would like to order:
     
 Product: ${product.name}
@@ -225,10 +224,32 @@ Please confirm availability and delivery details. Thank you!`;
     closeProductModal();
 }
 
-// Instagram Integration (replacing previous WhatsApp flow)
 function openWhatsApp(type, customMessage = '') {
-    // Ignore message type for now; open Instagram profile for DM/enquiry
-    window.open(INSTAGRAM_URL, '_blank');
+    let message = '';
+    switch (type) {
+        case 'general':
+            message = 'Hi! I am interested in Nisarga Spices products. Please share details about availability, pricing and ordering.';
+            break;
+        case 'honey':
+            message = `Hi! I would like to know availability and price details for Honey from Nisarga Spices.`;
+            break;
+        case 'pickle':
+            message = `Hi! I would like to know availability and price details for Amtekayi (hog plum) Pickle from Nisarga Spices.`;
+            break;
+        case 'order':
+            message = customMessage || 'Hi! I would like to place an order with Nisarga Spices. Please confirm availability and delivery details.';
+            break;
+        default:
+            message = 'Hi! I am interested in Nisarga Spices products. Please share details about availability, pricing and ordering.';
+    }
+
+    if (customMessage) {
+        message = customMessage;
+    }
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
 }
 
 // Smooth Scrolling for Navigation Links
@@ -378,7 +399,7 @@ document.addEventListener('keydown', function(e) {
 
 // Console message for developers
 console.log(`
-🍯 Malenadu Savi Website
+
 ========================
 Built with vanilla HTML, CSS, and JavaScript
 Mobile-first responsive design
