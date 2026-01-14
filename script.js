@@ -16,7 +16,7 @@
  */
 
 // Configuration - CUSTOMIZE THESE VALUES
-const WHATSAPP_PHONE_NUMBER = '8971193507';
+const WHATSAPP_PHONE_NUMBER = '+91 8971193507';
 const PRODUCT_DATA = {
     honey: {
         name: 'Honey',
@@ -412,3 +412,4 @@ Customization Guide:
 
 For support or questions, contact the developer.
 `);
+
